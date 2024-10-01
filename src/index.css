@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.cloud {
+  background-image: url("../../assets/cloud.png");
+  background-repeat: repeat-x; 
+  background-size: cover; 
+  width: 100%;
+  height: 200px; 
+  animation: scrollBG 30s linear infinite; 
+}
+
+@keyframes scrollBG {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
